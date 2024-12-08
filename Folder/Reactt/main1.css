@@ -1,0 +1,28 @@
+.container{
+ display: flex;   
+}
+
+
+.sidebar{
+    height: 450px;
+    background-color: grey;
+    border: 2px solid black;
+    width: 20%;
+}
+.maincontent{
+    height: 450px;
+    background-color:grey;
+    border: 2px solid black;
+    width: 80%
+}
+button{
+    width: 100px;
+    height: 30px;
+    display: block;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
