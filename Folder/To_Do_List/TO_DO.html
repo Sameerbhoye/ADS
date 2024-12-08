@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDoApp">
+<head>
+    <title>To DO App</title>
+    <style>
+        *{
+          margin: 0;
+          padding: 0;
+        }
+    
+        body{
+          width: 80vw;
+          margin: auto;
+          text-align: center;
+          border: 2px solid red;
+          padding: 8px;
+        }
+    
+        form{
+          display: flex;
+          justify-content: space-evenly;
+          background-color: brown;
+          height: 5vh;
+        }
+    
+        ul{
+          list-style: none;
+          background-color: rgb(255, 255, 0);
+        }
+    
+        li{
+          display: flex;
+          justify-content: space-between;
+        }
+      </style>
+</head>
+<body ng-controller="ToDoController">
+    <h2>To DO List App</h2>
+    <form ng-submit="addTodo()">
+        <input type="text" placeholder="Enter Text Here..." ng-model="newTodo" required >
+        <button type="submit">Add</button>
+    </form>
+    <ul>
+        <li ng-repeat="todo in todos">
+            <span ng-hide="todo.isEditing ">{{todo.text}}</span>
+            <input ng-show="todo.isEditing" type="text" ng-model="todo.text">
+            <button ng-click="editTodo(todo)">Edit</button>
+            <button ng-click="saveTodo(todo)" ng-show="todo.isEditing">Save</button>
+            <button ng-click="deleteTodo($index)">Delete</button>
+        </li>
+    </ul>
+    <script src="angular.min.js"></script>
+    <script src="app1.js"></script>
+    </body>
+</html>
