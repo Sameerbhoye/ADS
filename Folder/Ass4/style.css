@@ -1,0 +1,76 @@
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: url(geometric-gradient-futuristic-background_23-2149116406.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form_ele label{
+    font-weight: bold;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    width:400px;
+    margin: auto;
+    background-color:rgba(135, 215, 235,0.7);
+    padding: 10px;
+    border:1px solid rgb(38, 0, 255);
+}
+
+.form_ele{
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.form_ele input,textarea{
+    padding:5px;
+}
+
+
+h1{
+    width:400px;
+    margin: auto;
+    text-align: center;
+    background-color:rgba(135, 215, 235,0.4);
+    padding: 10px;
+    font-style: italic;
+    border:1px solid rgb(38, 0, 255);
+}
+
+.bt_box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:10px;
+}
+
+.bt_box button{
+    padding:5px;
+    cursor: pointer;
+    width:150px;
+    background-color: rgb(7, 7, 72);
+}
+
+.bt_box button:hover{
+    background-color: rgb(238, 102, 78);
+}
+
+[type="text"],[type="date"],[type="email"],[type="password"],[type="number"],[type="file"]{
+    width:200px;
+}
+
+select{
+    width: 200px;
+}
