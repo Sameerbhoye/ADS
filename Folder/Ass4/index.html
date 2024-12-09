@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>HTML FORM</h1><br>
+    <form>
+        <div class="form_ele">
+            <label for="uname"><b>Enter Username : </b></label>
+            <input type="text" placeholder="username" name="uname" id="uname">
+        </div>
+        <div class="form_ele">
+            <label for="pass"><b>Enter Password : </b></label>
+            <input type="password" placeholder="password" name="pass" id="pass">
+        </div>
+        <div class="form_ele">
+            <label for="email"><b>Enter Email : </b></label>
+            <input type="email" placeholder="email" name="email" id="email">
+        </div>
+        </div>
+        <div class="form_ele">
+            <label for="dob"><b>Enter DOB : </b></label>
+            <input type="date" placeholder="dob" name="dob" id="dob">
+        </div>
+        <div class="form_ele">
+            <label for="age"><b>Enter Age : </b></label>
+            <input type="number" placeholder="age" name="age" id="age" min="15" max="25">
+        </div>
+        <div class="form_ele">
+            <label><b>Gender : </b></label>
+            <div class="box"><input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+            </div>
+            <div class="box">
+                <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+            </div>
+            <div class="box">
+                <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label>
+            </div>
+        </div>
+        <div class="form_ele">
+            <label for="address">Enter Address : </label>
+            <textarea name="address" placeholder="address" id="address" rows="2" cols="27"></textarea>
+        </div>
+        <div class="form_ele">
+            <label>Courses :</label>
+            <div class="box">
+                <input type="checkbox" name="course" value="html" id="html"><label for="html">Html</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="course" value="css" id="css"><label for="css">Css</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="course" value="Java" id="java"><label for="java">Java</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="course" value="Python" id="python"><label for="python">Python</label>
+            </div>
+            <div class="box">
+                <input type="checkbox" name="course" value="React" id="react"><label for="react">React</label>
+            </div>
+        </div>
+        <div class="form_ele">
+            <label>Branch :</label>
+            <select name="branch" id="branch">
+                <option value="computer">
+                    Computer
+                </option>
+                <option value="IT">
+                    IT
+                </option>
+                <option value="mechanical">
+                    Mechanical
+                </option>
+                <option value="Civil">
+                    Civil
+                </option>
+                <option value="electrical">
+                    Electrical
+                </option>
+                <option value="ECE">
+                    ECE
+                </option>
+            </select>
+        </div>
+        <div class="form_ele">
+            <label for="pic"><b>Enter picture : </b></label>
+            <input type="file" name="pic" id="pic">
+        </div>
+        <div class="bt_box">
+            <button type="submit" onclick="validate()">
+                Submit
+            </button>
+            <button type="reset">
+                Reset
+            </button>
+        </div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
